@@ -24,10 +24,9 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    // Loader simple: siempre 1 segundo, sin depender de Spline
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
