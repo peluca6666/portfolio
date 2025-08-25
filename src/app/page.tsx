@@ -6,10 +6,10 @@ import Projects from "@/components/Projects";
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
-import Spline from "@splinetool/react-spline";
 import { useEffect, useState } from "react";
 import Lenis from "lenis";
 import Studies from "@/components/Studies";
+
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,9 +42,17 @@ export default function Home() {
   return (
     <>
       <main className="opacity-0 animate-fadeIn">
-        <div className="fixed inset-0 z-0">
-          <Spline scene="https://prod.spline.design/s1LZnF4LD6iKRAAn/scene.splinecode" />
-        </div>
+        <div className="fixed inset-0 z-0 overflow-hidden">
+  <video 
+    autoPlay 
+    muted 
+    loop 
+    playsInline
+    className="w-full h-full object-cover brightness-[0.4] contrast-125"
+  >
+    <source src="/videos/olas.mp4" type="video/mp4" />
+  </video>
+</div>
         <Header />
         <Hero />
         <AboutMe />
