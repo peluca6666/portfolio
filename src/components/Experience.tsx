@@ -26,7 +26,7 @@ const Experience = () => {
               </div>
 
               <p className="text-white font-medium text-lg leading-relaxed text-justify">
-            Pasante full stack, trabajando en el desarrollo de una aplicación web de gestión de turnos con Next.js, Express, TypeScript, Tailwind CSS y MySQL.
+            Pasante backend, trabajando en el desarrollo de una aplicación web de gestión de turnos con Next.js, Express, TypeScript, Tailwind CSS y MySQL.
 
 
                
