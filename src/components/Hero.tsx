@@ -8,25 +8,25 @@ import ScrollDownButton from "./ui/ScrollDown";
 
 const Hero = () => {
   return (
-    <main className="relative w-full h-screen overflow-hidden flex items-center justify-center">
+    <main className="relative w-full min-h-screen overflow-hidden flex items-center justify-center py-8 md:py-0">
     
-        <div className="w-full max-w-6xl mx-auto px-8">
+        <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Columna izquierda */}
             <div className="text-left">
               
               {/* Header */}
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
-                <span className="text-cyan-400 font-medium tracking-wide">
+              <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                <div className="w-8 sm:w-12 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                <span className="text-cyan-400 font-medium tracking-wide text-xs sm:text-sm">
                   DESARROLLADOR FULL STACK JR
                 </span>
               </div>
               
               {/* Título principal */}
-              <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold mb-4 sm:mb-6 leading-tight">
                 <span className="text-white">Hola, soy</span><br />
                 <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
                   Germán Cabrera
@@ -34,15 +34,15 @@ const Hero = () => {
               </h1>
               
               {/* Descripción más humana */}
-              <div className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-                <p className="mb-4">
+              <div className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
+                <p className="mb-3 sm:mb-4">
                   Me gusta <span className="text-cyan-400 font-semibold">resolver problemas con código y crear cosas que funcionen bien</span>.
                   Aprendo cada día mientras desarrollo proyectos reales.
                 </p>     
               </div>
               
               {/* Botones */}
-              <div className="flex flex-col sm:flex-row gap-4 mb-8 w-full">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 w-full">
                 <a href="#proyectos" className="w-full sm:w-auto">
                   <NeonButton variant="primary">
                     Ver proyectos
@@ -56,11 +56,11 @@ const Hero = () => {
               </div>
               
               {/* Estado actual */}
-              <div className="flex items-center gap-3">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 text-sm sm:text-base">
                 <span className="text-green-400 font-medium before:content-['●'] before:text-green-400 before:mr-2 before:animate-pulse">
                   Disponible para proyectos
                 </span>
-                <span className="text-gray-500">•</span>
+                <span className="text-gray-500 hidden sm:inline">•</span>
                 <span className="text-gray-400">Córdoba, Argentina</span>
               </div>
             </div>
@@ -150,7 +150,7 @@ const Hero = () => {
         </div>
      
       
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2">
         <ScrollDownButton />
       </div>
     </main>
