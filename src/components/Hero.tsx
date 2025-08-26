@@ -9,7 +9,7 @@ import ScrollDownButton from "./ui/ScrollDown";
 const Hero = () => {
   return (
     <main className="relative w-full min-h-screen overflow-hidden flex items-center justify-center py-8 md:py-0">
-    
+    <section id="inicio" >
         <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -41,19 +41,24 @@ const Hero = () => {
                 </p>     
               </div>
               
-              {/* Botones */}
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 w-full">
-                <a href="#proyectos" className="w-full sm:w-auto">
-                  <NeonButton variant="primary">
-                    Ver proyectos
-                  </NeonButton>
-                </a>
-                <div className="w-full sm:w-auto">
-                  <NeonButton variant="secondary">
-                    Descargar CV
-                  </NeonButton>
-                </div>
-              </div>
+             {/* Botones */}
+<div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 w-full">
+  <a href="#proyectos" className="w-full sm:w-auto">
+    <NeonButton variant="primary">
+      Ver proyectos
+    </NeonButton>
+  </a>
+  
+  <a 
+    href="/cabreraGermanCv.pdf"
+    download="CV-German-Eduardo-Cabrera.pdf"
+    className="w-full sm:w-auto"
+  >
+    <NeonButton variant="secondary">
+      Descargar CV
+    </NeonButton>  
+  </a>
+</div>
               
               {/* Estado actual */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 text-sm sm:text-base">
@@ -153,6 +158,7 @@ const Hero = () => {
       <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2">
         <ScrollDownButton />
       </div>
+      </section>
     </main>
   );
 };

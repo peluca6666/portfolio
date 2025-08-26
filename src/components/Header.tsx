@@ -10,7 +10,7 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-            
+
             if (currentScrollY > lastScrollY && currentScrollY > 100) {
                 // Scrolleando hacia abajo - ocultar
                 setIsVisible(false);
@@ -18,7 +18,7 @@ const Header = () => {
                 // Scrolleando hacia arriba - mostrar
                 setIsVisible(true);
             }
-            
+
             setLastScrollY(currentScrollY);
         };
 
@@ -27,29 +27,42 @@ const Header = () => {
     }, [lastScrollY]);
 
     return (
-        <header 
+        <header
             className={`
                 fixed top-0 w-full z-20 py-4 
                 transition-all duration-300 ease-in-out
                 flex justify-center md:justify-end 
-                px-4 md:pr-8 lg:pr-16 xl:pr-32 2xl:pr-48
-                ${isVisible 
-                    ? 'translate-y-0 bg-black/20 backdrop-blur-md border-b border-white/10' 
+                px-2 sm:px-4 md:pr-8 lg:pr-16 xl:pr-32 2xl:pr-48
+                ${isVisible
+                    ? 'translate-y-0 bg-black/20 backdrop-blur-md border-b border-white/10'
                     : '-translate-y-full bg-transparent backdrop-blur-none'
                 }
             `}
         >
             {/* Navegación y redes sociales */}
-            <div className="flex items-center gap-6 md:gap-8">
+            <div className="flex items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8">
                 {/* Navegación */}
                 <nav>
-                    <ul className="flex space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-12">
+                    <ul className="flex space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-12">
+                        <li>
+                            <a
+                                href="#"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                                }}
+                                className="relative group text-white transition-colors duration-300 ease-in-out text-xs md:text-sm lg:text-base"
+                            >
+                                INICIO
+                                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
                         <li>
                             <a
                                 href="#proyectos"
                                 className="relative group text-white transition-colors duration-300 ease-in-out text-xs md:text-sm lg:text-base"
                             >
-                               PROYECTOS
+                                PROYECTOS
                                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
                             </a>
                         </li>
@@ -69,7 +82,7 @@ const Header = () => {
                                 href="#contacto"
                                 className="relative group text-white transition-colors duration-300 ease-in-out text-xs md:text-sm lg:text-base"
                             >
-                               CONTACTO
+                                CONTACTO
                                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
                             </a>
                         </li>
@@ -80,7 +93,7 @@ const Header = () => {
                 <div className="w-px h-5 bg-white/30 hidden md:block"></div>
 
                 {/* Redes sociales - a la derecha */}
-                <div className="flex items-center space-x-3 md:space-x-4">
+                <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
                     <a
                         href="https://github.com/peluca6666"
                         target="_blank"
