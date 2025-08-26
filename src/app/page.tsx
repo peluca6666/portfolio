@@ -26,7 +26,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 1600);
 
     return () => clearTimeout(timer);
   }, []);
@@ -62,15 +62,7 @@ export default function Home() {
         <Contact />
       </main>
       
-      <style jsx global>{`
-        @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.5s ease-in-out forwards;
-        }
-      `}</style>
+     
     </>
   );
 }

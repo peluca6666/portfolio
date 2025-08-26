@@ -66,14 +66,14 @@ const AnimatedReveal: React.FC<AnimatedRevealProps> = ({
         .smooth-reveal-left {
           animation: smoothRevealLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
           animation-timeline: view();
-          animation-range: entry 0% cover 70%;
+          animation-range: entry 0% cover 55%;
           animation-fill-mode: both;
         }
         
         .smooth-reveal-right {
           animation: smoothRevealRight 0.8s cubic-bezier(0.4, 0, 0.2, 1);
           animation-timeline: view();
-          animation-range: entry 0% cover 70%;
+          animation-range: entry 0% cover 55%;
           animation-fill-mode: both;
         }
         
