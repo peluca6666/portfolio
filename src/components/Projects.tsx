@@ -151,7 +151,7 @@ const Projects = () => {
                   {/* Imagen - 50% en desktop */}
                 <div className="order-2 lg:order-2">
                   <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden">
-                    <img src="images/verona.PNG" alt="Screenshot de mi proyecto" className="w-full object-cover transition-transform duration-700 group-hover:scale-103" />
+                    <img src="/images/verona.PNG" alt="Screenshot de mi proyecto" className="w-full object-cover transition-transform duration-700 group-hover:scale-103" />
                   </div>
                 </div>
               </div>
