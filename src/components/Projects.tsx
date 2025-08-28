@@ -95,8 +95,18 @@ const Projects = () => {
 
               {/* Layout horizontal alternado */}
               <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                 {/* Imagen - Primera columna en desktop */}
+      <div className="order-2 lg:order-2">
+        <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden">
+          <img 
+            src="images/verona.PNG" 
+            alt="Screenshot de Verona Joyas - Landing page de joyería" 
+            className="w-full object-cover transition-transform duration-700 group-hover:scale-103" 
+          />
+        </div>
+      </div>
                 {/* Contenido con goteo en lado derecho */}
-                <div className="order-1 lg:order-1 relative pl-4">
+                <div className="order- lg:order-1 relative pl-4">
                   {/* Goteo naranja en lado derecho del texto */}
                   <div className="absolute left-0 top-0 w-0.5 h-0 bg-gradient-to-b from-purple-400 via-pruple to-purple-400 opacity-0 group-hover:opacity-100 group-hover:h-full transition-all duration-1000 ease-out shadow-[0_0_8px_rgba(239,68,68,0.6)]"></div>
                   <div className="absolute left-[-1px] top-0 w-1 h-0 bg-orange-500/20 blur-sm opacity-0 group-hover:opacity-100 group-hover:h-full transition-all duration-1200 ease-out"></div>
@@ -143,15 +153,6 @@ const Projects = () => {
                         </div>
                       </NeonButton>
                     </a>
-                  </div>
-
-                </div>
-
-                {/* Imagen - Segunda columna en desktop */}
-                  {/* Imagen - 50% en desktop */}
-                <div className="order-2 lg:order-1">
-                  <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden">
-                    <img src="images/verona.PNG" alt="Screenshot de Verona" className="w-full object-cover transition-transform duration-700 group-hover:scale-103" />
                   </div>
                 </div>
               </div>
