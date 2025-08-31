@@ -104,7 +104,7 @@ const Header = () => {
                         <FiGithub className="w-4 h-4 md:w-5 md:h-5" />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/germán-eduardo-cabrera-628827217"
+                        href="www.linkedin.com/in/gcabrera922"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group text-white/80 hover:text-cyan-400 transition-all duration-300 hover:scale-110"
