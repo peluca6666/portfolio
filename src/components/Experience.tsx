@@ -22,7 +22,7 @@ const Experience = () => {
             <div className="pl-6">
               <div className="mb-6">
                 <h3 className="text-xl font-bold text-white mb-2">Pasantia Backend</h3>
-                <p className="text-cyan-400 font-medium text-lg">Litoral Software • Junio 2025 - Presente</p>
+                <p className="text-cyan-400 font-medium text-lg">Litoral Software • Junio 2025 - Octubre 2025</p>
               </div>
 
               <p className="text-white font-medium text-lg leading-relaxed text-justify">
