@@ -16,7 +16,7 @@ const AboutMe = () => {
 
           <div className="bg-black/75 backdrop-blur-md border border-cyan-400/30 rounded-lg p-10 shadow-xl hover:bg-black/85 hover:border-cyan-400/50 transition-all duration-300 group overflow-hidden">
             <p className="text-white font-medium mb-6 text-left md:text-justify leading-relaxed text-lg">
-              Soy Germán, desarrollador de Argentina y estoy por recibirme de la Tecnicatura en Programación. Me gusta trabajar con React, Node.js y MySQL, y siempre busco
+              Soy Germán, desarrollador de Argentina y recién graduado de mi tecnicatura en programación. Me gusta trabajar con React, Node.js y MySQL, y siempre busco
               combinar el desarrollo con seguridad informática y comercio digital, para crear soluciones que sean completas y útiles en la práctica.
             </p>
 

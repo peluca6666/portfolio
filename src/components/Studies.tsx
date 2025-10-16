@@ -22,11 +22,11 @@ const Studies = () => {
                         <div className="pl-6">
                             <div className="mb-6">
                                 <h3 className="text-xl font-bold text-white mb-2">Tecnicatura en Programación</h3>
-                                <p className="text-cyan-400 font-medium text-lg">Instituto Universitario Aeronáutico - 2022 / Presente</p>
+                                <p className="text-cyan-400 font-medium text-lg">Instituto Universitario Aeronáutico - 2022 / 2025</p>
                             </div>
 
                             <p className="text-white font-medium text-lg leading-relaxed text-justify">
-                                Cursando el último año de la Tecnicatura en Programación en el Instituto Universitario Aeronáutico (IUA) .
+                                Graduado de la Tecnicatura en Programación en el Instituto Universitario Aeronáutico (IUA) .
                             </p>
                         </div>
 
