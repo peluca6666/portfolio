@@ -29,7 +29,7 @@ const Hero = () => {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold mb-4 sm:mb-6 leading-tight">
                 <span className="text-white">Hola, soy</span><br />
                 <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
-                  Germán Cabrera
+                  Germán 
                 </span>
               </h1>
               
