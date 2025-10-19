@@ -5,12 +5,12 @@ const Experience = () => {
   return (
     <section id="experiencia" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-            Experiencia
-          </h2>
-          <div className="w-16 h-1 bg-cyan-400 mx-auto rounded-full"></div>
-        </div>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
+              Experiencia
+            </h2>
+            <div className="w-16 h-1 bg-cyan-400 mx-auto rounded-full"></div>
+          </div>
 
         <AnimatedReveal direction="right">
           <div className="bg-black/75 backdrop-blur-md border border-cyan-400/35 rounded-lg p-10 shadow-xl hover:bg-black/85
