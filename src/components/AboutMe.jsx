@@ -15,17 +15,14 @@ const AboutMe = () => {
           </div>
 
           <div className="bg-black/75 backdrop-blur-md border border-cyan-400/30 rounded-lg p-10 shadow-xl hover:bg-black/85 hover:border-cyan-400/50 transition-all duration-300 group overflow-hidden">
-            <p className="text-white font-medium mb-6 text-left md:text-justify leading-relaxed text-lg">
-              Soy Germán, desarrollador de Argentina y recién graduado de mi tecnicatura en programación. Me gusta trabajar con React, Node.js y MySQL, y siempre busco
-              combinar el desarrollo con seguridad informática y comercio digital, para crear soluciones que sean completas y útiles en la práctica.
-            </p>
+           <p className="text-white font-medium mb-6 text-left md:text-justify leading-relaxed text-lg">
+  Soy Germán, desarrollador Full Stack de Argentina con experiencia trabajando en proyectos reales con <strong>React</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong> y <strong>MySQL</strong>. Me gusta combinar desarrollo frontend y backend con buenas prácticas de seguridad y eficiencia, creando soluciones completas y escalables.
+</p>
 
-            <p className="text-white font-medium text-left md:text-justify leading-relaxed text-lg">
-              Me motiva resolver problemas reales con tecnología. En cada proyecto busco equilibrar la experiencia 
-              del usuario con el impacto en el negocio, siempre priorizando soluciones escalables y útiles. 
-              Hoy estoy buscando mi primera oportunidad profesional, donde pueda aplicar mis conocimientos,
-              crecer en un equipo y aportar valor desde el primer día.
-            </p>
+<p className="text-white font-medium text-left md:text-justify leading-relaxed text-lg">
+  Me motiva resolver problemas reales con tecnología y generar impacto tangible. En cada proyecto busco equilibrar la experiencia del usuario con la eficiencia del sistema, priorizando siempre soluciones mantenibles y de calidad. Actualmente busco oportunidades donde pueda seguir creciendo, aportando valor desde mi experiencia previa en entornos profesionales y remotos.
+</p>
+
           </div>
         </AnimatedReveal>
       </div>
