@@ -1,7 +1,7 @@
 import React from "react";
 import { 
   SiExpress, SiJavascript, SiMysql, SiNextdotjs, 
-  SiPrisma, SiReact, SiTailwindcss, SiTypescript, SiNodedotjs 
+  SiPrisma, SiReact, SiTailwindcss, SiNodedotjs 
 } from 'react-icons/si';
 import NeonButton from "./ui/NeonButton";
 import ScrollDownButton from "./ui/ScrollDown";
@@ -9,7 +9,7 @@ import ScrollDownButton from "./ui/ScrollDown";
 const Hero = () => {
   return (
     <main className="relative w-full min-h-screen overflow-hidden flex items-center justify-center py-8 md:py-0">
-      <section id="inicio" >
+      <section id="inicio">
         <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
@@ -20,34 +20,30 @@ const Hero = () => {
                   DESARROLLADOR FULL STACK
                 </span>
               </div>
-              
+
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold mb-4 sm:mb-6 leading-tight">
                 <span className="text-white">Hola, soy</span><br />
                 <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
-                  Germán 
+                  Germán
                 </span>
               </h1>
-              
+
               <div className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
                 <p className="mb-3 sm:mb-4">
                   Me gusta resolver problemas con código y crear soluciones que funcionen bien. Desarrollo proyectos reales y aprendo constantemente.
-                </p>     
+                </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 w-full">
                 <a href="#proyectos" className="w-full sm:w-auto">
-                  <NeonButton variant="primary">
-                    Ver proyectos
-                  </NeonButton>
+                  <NeonButton variant="primary">Ver proyectos</NeonButton>
                 </a>
                 <a 
                   href="/cabreraGermanCv.pdf"
                   download="CV-German-Eduardo-Cabrera.pdf"
                   className="w-full sm:w-auto"
                 >
-                  <NeonButton variant="secondary">
-                    Descargar CV
-                  </NeonButton>  
+                  <NeonButton variant="secondary">Descargar CV</NeonButton>  
                 </a>
               </div>
 
@@ -68,13 +64,14 @@ const Hero = () => {
                     <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                     <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    <span className="ml-4 text-gray-400 text-sm">stack.js</span>
+                    <span className="ml-4 text-gray-400 text-sm">Mi stack</span>
                   </div>
                   <div className="font-mono text-sm space-y-2">
                     <div>{`const germanStack = {`}</div>
-                    <div className="ml-4">frontend: ['React', 'Next.js', 'TailwindCSS'],</div>
+                    <div className="ml-4">frontend: ['React', 'Next.js', 'Tailwind CSS'],</div>
                     <div className="ml-4">backend: ['Node.js', 'Express'],</div>
                     <div className="ml-4">database: ['MySQL', 'Prisma'],</div>
+                    <div className="ml-4">language: 'JavaScript',</div>
                     <div className="ml-4">currentProject: 'VeronaJoyas'</div>
                     <div>{`}`}</div>
                   </div>
@@ -94,13 +91,13 @@ const Hero = () => {
                       </div>
                       <div className="flex items-center gap-2 px-3 py-2 bg-blue-400/20 border border-blue-400/30 rounded-lg">
                         <SiTailwindcss className="text-blue-400 text-lg" />
-                        <span className="text-blue-400 text-sm font-medium">Tailwind</span>
+                        <span className="text-blue-400 text-sm font-medium">Tailwind CSS</span>
                       </div>
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-white font-medium mb-3">Backend & Database</h3>
+                    <h3 className="text-white font-medium mb-3">Backend y Base de datos</h3>
                     <div className="flex flex-wrap gap-3">
                       <div className="flex items-center gap-2 px-3 py-2 bg-green-600/20 border border-green-600/30 rounded-lg">
                         <SiNodedotjs className="text-green-500 text-lg" />
@@ -122,15 +119,11 @@ const Hero = () => {
                   </div>
 
                   <div>
-                    <h3 className="text-white font-medium mb-3">Lenguajes</h3>
+                    <h3 className="text-white font-medium mb-3">Lenguaje</h3>
                     <div className="flex flex-wrap gap-3">
                       <div className="flex items-center gap-2 px-3 py-2 bg-yellow-400/20 border border-yellow-400/30 rounded-lg">
                         <SiJavascript className="text-yellow-400 text-lg" />
                         <span className="text-yellow-400 text-sm font-medium">JavaScript</span>
-                      </div>
-                      <div className="flex items-center gap-2 px-3 py-2 bg-blue-600/20 border border-blue-600/30 rounded-lg">
-                        <SiTypescript className="text-blue-500 text-lg" />
-                        <span className="text-blue-500 text-sm font-medium">TypeScript</span>
                       </div>
                     </div>
                   </div>
