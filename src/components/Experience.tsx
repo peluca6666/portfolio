@@ -3,11 +3,11 @@ import AnimatedReveal from './ui/AnimatedReveal';
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 px-4">
+    <section id="experiencia" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-            Experience
+            Experiencia
           </h2>
           <div className="w-16 h-1 bg-cyan-400 mx-auto rounded-full"></div>
         </div>
@@ -20,15 +20,15 @@ const Experience = () => {
             
             <div className="pl-6">
               <div className="mb-6">
-                <h3 className="text-xl font-bold text-white mb-2">Full Stack Developer</h3>
-                <p className="text-cyan-400 font-medium text-lg">Linear.app • Feb 2023 - Present</p>
+                <h3 className="text-xl font-bold text-white mb-2">Desarrollador Full Stack</h3>
+                <p className="text-cyan-400 font-medium text-lg">Linear.app • Feb 2023 - Actualidad</p>
               </div>
 
               <ul className="list-disc list-inside text-white font-medium text-lg leading-relaxed">
-                <li>Developed internal dashboards and features using <strong>React</strong> and <strong>TailwindCSS</strong>, integrating APIs with <strong>Node.js</strong> and <strong>Express</strong>.</li>
-                <li>Participated in code reviews, component refactoring, and agile sprints, resolving bugs and adjusting workflows based on QA and product feedback.</li>
-                <li>Implemented unit tests, data validations, and functional documentation.</li>
-                <li>Built internal modules such as user management with roles, notification flows, and reporting pages, improving product efficiency and consistency.</li>
+                <li>Desarrollé dashboards internos y funcionalidades usando React y TailwindCSS, integrando APIs con Node.js y Express para gestionar datos de usuarios, proyectos y reportes.</li>
+                <li>Participé en revisiones de código, refactorización de componentes y sprints ágiles, resolviendo errores y ajustando flujos según el feedback de QA y product managers.</li>
+                <li>Implementé tests unitarios, validaciones de datos y documentación de funcionalidades.</li>
+                <li>Desarrollé módulos internos como gestión de usuarios con roles, flujos de notificaciones y páginas de reportes, mejorando la eficiencia y consistencia del producto.</li>
               </ul>
             </div>
           </div>
@@ -42,15 +42,15 @@ const Experience = () => {
             
             <div className="pl-6">
               <div className="mb-6">
-                <h3 className="text-xl font-bold text-white mb-2">Full Stack Developer (Internship)</h3>
-                <p className="text-cyan-400 font-medium text-lg">Litoral Software • Jun 2022 - Jan 2023</p>
+                <h3 className="text-xl font-bold text-white mb-2">Desarrollador Full Stack (Pasantía)</h3>
+                <p className="text-cyan-400 font-medium text-lg">Litoral Software • Jun 2022 - Ene 2023</p>
               </div>
 
               <ul className="list-disc list-inside text-white font-medium text-lg leading-relaxed">
-                <li>Developed a shift management application using <strong>React</strong>, <strong>Next.js</strong>, <strong>Express</strong>, <strong>Prisma</strong>, and <strong>TailwindCSS</strong>, automating manual client processes.</li>
-                <li>Implemented authentication with <strong>JWT</strong> and automatic notifications; participated in defining and documenting the REST API.</li>
-                <li>Collaborated on UI/UX design and data flow adjustments to improve usability and efficiency.</li>
-                <li>Wrote unit tests and data validations to ensure correct functionality and prevent errors.</li>
+                <li>Desarrollé una aplicación de gestión de turnos usando React, Next.js, Express, Prisma y TailwindCSS, automatizando procesos manuales del cliente.</li>
+                <li>Implementé autenticación con JWT y notificaciones automáticas; participé en la definición y documentación de la API REST.</li>
+                <li>Colaboré en el diseño de UI/UX y ajustes del flujo de datos para mejorar la usabilidad y eficiencia del producto.</li>
+                <li>Escribí tests unitarios y validaciones de datos para asegurar el correcto funcionamiento y prevenir errores.</li>
               </ul>
             </div>
           </div>

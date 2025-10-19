@@ -9,23 +9,18 @@ import ScrollDownButton from "./ui/ScrollDown";
 const Hero = () => {
   return (
     <main className="relative w-full min-h-screen overflow-hidden flex items-center justify-center py-8 md:py-0">
-    <section id="inicio" >
+      <section id="inicio" >
         <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            
-            {/* Columna izquierda */}
+
             <div className="text-left">
-              
-              {/* Header */}
               <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
                 <div className="w-8 sm:w-12 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
                 <span className="text-cyan-400 font-medium tracking-wide text-xs sm:text-sm">
-                  DESARROLLADOR FULL STACK JR
+                  DESARROLLADOR FULL STACK
                 </span>
               </div>
               
-              {/* Título principal */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold mb-4 sm:mb-6 leading-tight">
                 <span className="text-white">Hola, soy</span><br />
                 <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -33,34 +28,29 @@ const Hero = () => {
                 </span>
               </h1>
               
-              {/* Descripción más humana */}
               <div className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
                 <p className="mb-3 sm:mb-4">
-                  Me gusta <span className="text-cyan-400 font-semibold">resolver problemas con código y crear cosas que funcionen bien</span>.
-                  Aprendo cada día mientras desarrollo proyectos reales.
+                  Me gusta resolver problemas con código y crear soluciones que funcionen bien. Desarrollo proyectos reales y aprendo constantemente.
                 </p>     
               </div>
-              
-             {/* Botones */}
-<div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 w-full">
-  <a href="#proyectos" className="w-full sm:w-auto">
-    <NeonButton variant="primary">
-      Ver proyectos
-    </NeonButton>
-  </a>
-  
-  <a 
-    href="/cabreraGermanCv.pdf"
-    download="CV-German-Eduardo-Cabrera.pdf"
-    className="w-full sm:w-auto"
-  >
-    <NeonButton variant="secondary">
-      Descargar CV
-    </NeonButton>  
-  </a>
-</div>
-              
-              {/* Estado actual */}
+
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 w-full">
+                <a href="#proyectos" className="w-full sm:w-auto">
+                  <NeonButton variant="primary">
+                    Ver proyectos
+                  </NeonButton>
+                </a>
+                <a 
+                  href="/cabreraGermanCv.pdf"
+                  download="CV-German-Eduardo-Cabrera.pdf"
+                  className="w-full sm:w-auto"
+                >
+                  <NeonButton variant="secondary">
+                    Descargar CV
+                  </NeonButton>  
+                </a>
+              </div>
+
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 text-sm sm:text-base">
                 <span className="text-green-400 font-medium before:content-['●'] before:text-green-400 before:mr-2 before:animate-pulse">
                   Disponible para proyectos
@@ -69,12 +59,10 @@ const Hero = () => {
                 <span className="text-gray-400">Córdoba, Argentina</span>
               </div>
             </div>
-            
-            {/* Columna derecha - Stack */}
+
             <div className="hidden lg:block">
               <div className="relative">
-                
-                {/* Card de código más humano */}
+
                 <div className="bg-gray-900/50 backdrop-blur-sm border border-cyan-400/20 rounded-xl p-6 mb-6">
                   <div className="flex items-center gap-2 mb-4">
                     <div className="w-3 h-3 bg-red-500 rounded-full"></div>
@@ -83,16 +71,15 @@ const Hero = () => {
                     <span className="ml-4 text-gray-400 text-sm">stack.js</span>
                   </div>
                   <div className="font-mono text-sm space-y-2">
-                    <div><span className="text-purple-400">const</span> <span className="text-cyan-400">germanStack</span> = {`{`}</div>
-                    <div className="ml-4"><span className="text-green-400">frontend</span>: [<span className="text-yellow-400">'React'</span>, <span className="text-yellow-400">'Next.js'</span>],</div>
-                    <div className="ml-4"><span className="text-green-400">backend</span>: [<span className="text-yellow-400">'Node.js'</span>, <span className="text-yellow-400">'Express'</span>],</div>
-                    <div className="ml-4"><span className="text-green-400">database</span>: [<span className="text-yellow-400">'MySQL'</span>, <span className="text-yellow-400">'Prisma'</span>],</div>
-                    <div className="ml-4"><span className="text-green-400">currentProject</span>: <span className="text-yellow-400">'VeronaJoyas'</span></div>
+                    <div>{`const germanStack = {`}</div>
+                    <div className="ml-4">frontend: ['React', 'Next.js', 'TailwindCSS'],</div>
+                    <div className="ml-4">backend: ['Node.js', 'Express'],</div>
+                    <div className="ml-4">database: ['MySQL', 'Prisma'],</div>
+                    <div className="ml-4">currentProject: 'VeronaJoyas'</div>
                     <div>{`}`}</div>
                   </div>
                 </div>
-                
-                {/* Tecnologías con colores más suaves */}
+
                 <div className="space-y-4">
                   <div>
                     <h3 className="text-white font-medium mb-3">Frontend</h3>
@@ -135,7 +122,7 @@ const Hero = () => {
                   </div>
 
                   <div>
-                    <h3 className="text-white font-medium mb-3">Languages</h3>
+                    <h3 className="text-white font-medium mb-3">Lenguajes</h3>
                     <div className="flex flex-wrap gap-3">
                       <div className="flex items-center gap-2 px-3 py-2 bg-yellow-400/20 border border-yellow-400/30 rounded-lg">
                         <SiJavascript className="text-yellow-400 text-lg" />
@@ -151,13 +138,13 @@ const Hero = () => {
 
               </div>
             </div>
+
           </div>
         </div>
-     
-      
-      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2">
-        <ScrollDownButton />
-      </div>
+
+        <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2">
+          <ScrollDownButton />
+        </div>
       </section>
     </main>
   );
