@@ -70,8 +70,7 @@ const Hero = () => {
                     <div>{`const germanStack = {`}</div>
                     <div className="ml-4">frontend: ['React', 'Next.js', 'Tailwind CSS'],</div>
                     <div className="ml-4">backend: ['Node.js', 'Express'],</div>
-                    <div className="ml-4">database: ['MySQL', 'Prisma'],</div>
-                    <div className="ml-4">tools: ['Git', 'npm', 'REST APIs'],</div>
+                    <div className="ml-4">database: ['MySQL', 'Prisma'],</div>                  
                     <div className="ml-4">focus: 'JavaScript Full Stack',</div>
                     <div className="ml-4">currentProject: 'VeronaJoyas'</div>
                     <div>{`}`}</div>
