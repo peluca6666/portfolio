@@ -23,7 +23,7 @@ const Experience = () => {
               <div className="pl-6">
                 <div className="mb-6">
                   <h3 className="text-xl font-bold text-white mb-2">Full Stack Developer</h3>
-                  <p className="text-cyan-400 font-medium text-lg">Linear.app • Feb 2023 - Actualidad</p>
+                  <p className="text-cyan-400 font-medium text-lg">Linear.app • Oct 2024 - Actualidad</p>
                 </div>
                 <p className="text-white font-medium text-lg leading-relaxed text-justify">
                   Desarrollo dashboards internos y funcionalidades completas integrando React, Node.js y TailwindCSS.
