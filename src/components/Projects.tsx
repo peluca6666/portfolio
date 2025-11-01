@@ -71,7 +71,7 @@ const Projects = () => {
                     onClick={() => openGallery('verona', 'Verona Joyas')}
                   >
                     <img 
-                      src="/images/verona.PNG" 
+                      src="/images/verona-1.PNG" 
                       alt="Screenshot de Verona Joyas - Landing page de joyería" 
                       className="w-full object-cover transition-transform duration-700 group-hover/image:scale-105" 
                     />
