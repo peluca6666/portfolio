@@ -21,12 +21,12 @@ const Hero = () => {
                 </span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold mb-4 sm:mb-6 leading-tight">
-                <span className="text-white">Hola, soy</span><br />
-                <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
-                  Germán
-                </span>
-              </h1>
+             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold mb-4 sm:mb-6 leading-tight">
+  <span className="text-white">Hola, soy</span><br />
+  <span className="bg-gradient-to-r from-cyan-300 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent animate-pulse">
+    Germán
+  </span>
+</h1>
 
               <div className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
                 <p className="mb-3 sm:mb-4">

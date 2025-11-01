@@ -62,6 +62,7 @@ const ProjectGallery: React.FC<ProjectGalleryProps> = ({
           <button
             onClick={prevImage}
             className="absolute left-4 z-10 p-3 bg-black/50 hover:bg-black/70 text-white rounded-full transition-all duration-200 hover:scale-110 border border-cyan-400/30"
+            disabled={images.length <= 1}
           >
             <FaChevronLeft size={20} />
           </button>
@@ -77,25 +78,28 @@ const ProjectGallery: React.FC<ProjectGalleryProps> = ({
           <button
             onClick={nextImage}
             className="absolute right-4 z-10 p-3 bg-black/50 hover:bg-black/70 text-white rounded-full transition-all duration-200 hover:scale-110 border border-cyan-400/30"
+            disabled={images.length <= 1}
           >
             <FaChevronRight size={20} />
           </button>
         </div>
 
         {/* Image Indicators */}
-        <div className="flex justify-center gap-2 p-4 bg-gray-900/80 border-t border-cyan-400/20">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToImage(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                index === currentIndex 
-                  ? 'bg-cyan-400 scale-125' 
-                  : 'bg-gray-600 hover:bg-gray-400'
-              }`}
-            />
-          ))}
-        </div>
+        {images.length > 1 && (
+          <div className="flex justify-center gap-2 p-4 bg-gray-900/80 border-t border-cyan-400/20">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToImage(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  index === currentIndex 
+                    ? 'bg-cyan-400 scale-125' 
+                    : 'bg-gray-600 hover:bg-gray-400'
+                }`}
+              />
+            ))}
+          </div>
+        )}
 
         {/* Thumbnails */}
         {images.length > 1 && (
