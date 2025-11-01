@@ -15,23 +15,23 @@ const Projects = () => {
   const projectImages = {
     verona: [
       '/images/verona-1.PNG',
-      '/images/verona-2.png',
-      '/images/verona-3.png',
-      '/images/verona-4.png',
-      '/images/verona-5.png',
-      '/images/verona-6.png',
-      '/images/verona-7.png',
-      '/images/verona-8.png'
+      '/images/verona-2.PNG',
+      '/images/verona-3.PNG',
+      '/images/verona-4.PNG',
+      '/images/verona-5.PNG',
+      '/images/verona-6.PNG',
+      '/images/verona-7.PNG',
+      '/images/verona-8.PNG'
 
     ],
     salomarket: [
       '/images/salomarket.PNG',
-      '/images/salomarket-2.png',
-      '/images/salomarket-3.png',
-      '/images/salomarket-4.png',
-      '/images/salomarket-5.png',
-      '/images/salomarket-6.png',
-      '/images/salomarket-7.png'
+      '/images/salomarket-2.PNG',
+      '/images/salomarket-3.PNG',
+      '/images/salomarket-4.PNG',
+      '/images/salomarket-5.PNG',
+      '/images/salomarket-6.PNG',
+      '/images/salomarket-7.PNG'
 
     ]
   };
