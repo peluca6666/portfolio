@@ -27,7 +27,7 @@ const Projects = () => {
     ],
     salomarket: [
       '/images/salomarket.PNG',
-      '/images/salomarket-1.jpg', 
+      '/images/salomarket-1.PNG', 
       '/images/salomarket-2.jpg',
       '/images/salomarket-3.jpg'
     ]
