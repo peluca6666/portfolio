@@ -1,10 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NeonButton from './ui/NeonButton';
 import AnimatedReveal from './ui/AnimatedReveal';
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import ProjectGallery from './ui/Projectgallery';
+import { FaGithub, FaExternalLinkAlt, FaImages } from "react-icons/fa";
 import { SiExpress, SiJavascript, SiMysql, SiNextdotjs, SiPrisma, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
 
 const Projects = () => {
+  // Estado para controlar la galería
+  const [galleryState, setGalleryState] = useState<{
+    isOpen: boolean;
+    images: string[];
+    projectName: string;
+  }>({
+    isOpen: false,
+    images: [],
+    projectName: ''
+  });
+
+  // Datos de imágenes para cada proyecto
+  const projectImages = {
+    verona: [
+      '/images/verona.PNG',
+      '/images/verona-1.jpg', 
+      '/images/verona-2.jpg',
+      '/images/verona-3.jpg'
+    ],
+    salomarket: [
+      '/images/salomarket.PNG',
+      '/images/salomarket-1.jpg', 
+      '/images/salomarket-2.jpg',
+      '/images/salomarket-3.jpg'
+    ]
+  };
+
+  const openGallery = (project: string, projectName: string) => {
+    setGalleryState({
+      isOpen: true,
+      images: projectImages[project as keyof typeof projectImages] || [],
+      projectName
+    });
+  };
+
+  const closeGallery = () => {
+    setGalleryState(prev => ({ ...prev, isOpen: false }));
+  };
+
   return (
     <section id="proyectos" className="pt-20 py-10 px-3 ">
       <div className="max-w-6xl mx-auto">
@@ -23,23 +63,36 @@ const Projects = () => {
             <div className="bg-black/50 backdrop-blur-sm border border-purple-400/20 rounded-lg p-10 hover:bg-black/80 hover:border-purple-400/40 transition-all duration-300 group overflow-hidden">
               <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* Imagen - Segunda columna en desktop */}
-                <div className="order-2 lg:order-2">
-                  <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden">
+                <div className="order-2 lg:order-2 relative group/image">
+                  <div 
+                    className="aspect-video bg-gray-800 rounded-lg overflow-hidden cursor-pointer relative"
+                    onClick={() => openGallery('verona', 'Verona Joyas')}
+                  >
                     <img 
                       src="/images/verona.PNG" 
                       alt="Screenshot de Verona Joyas - Landing page de joyería" 
-                      className="w-full object-cover transition-transform duration-700 group-hover:scale-103" 
+                      className="w-full object-cover transition-transform duration-700 group-hover/image:scale-105" 
                     />
+                    
+                    {/* Overlay con indicador de galería */}
+                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover/image:opacity-100 transition-all duration-300 flex items-center justify-center">
+                      <div className="text-center text-white transform translate-y-4 group-hover/image:translate-y-0 transition-transform duration-300">
+                        <FaImages className="text-3xl mx-auto mb-2 text-purple-400" />
+                        <span className="font-semibold text-lg">Ver galería</span>
+                        <p className="text-sm text-gray-300 mt-1">Haz clic para ver más imágenes</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Indicador pequeño siempre visible */}
+                  <div className="absolute top-3 right-3 bg-purple-600/90 text-white px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 backdrop-blur-sm">
+                    <FaImages className="text-xs" />
+                    {projectImages.verona.length} imágenes
                   </div>
                 </div>
 
                 {/* Contenido con goteo en lado derecho */}
                 <div className="order-1 lg:order-1 relative pr-4">
-                  {/* Goteo púrpura en lado derecho del texto */}
-                  <div className="absolute right-0 top-0 w-0.5 h-0 bg-gradient-to-b from-purple-400 via-purple-500 to-purple-400 opacity-0 group-hover:opacity-100 group-hover:h-full transition-all duration-1000 ease-out shadow-[0_0_8px_rgba(147,51,234,0.6)]"></div>
-                  {/* Glow sutil */}
-                  <div className="absolute right-[-1px] top-0 w-1 h-0 bg-purple-400 blur-sm opacity-0 group-hover:opacity-100 group-hover:h-full transition-all duration-1200 ease-out"></div>
-
                   <h3 className="text-2xl font-bold text-white mb-4">Verona Joyas</h3>
                   <p className="text-gray-300 text-lg mb-6 ml-5 leading-relaxed text-justify">
                     Landing page para una tienda de joyería, diseñada para resaltar la elegancia y sofisticación de los productos. Incluye animaciones sutiles, un diseño responsivo y un panel de administración
@@ -106,23 +159,36 @@ const Projects = () => {
             <div className="bg-black/50 border backdrop-blur-sm border-cyan-400/20 rounded-lg p-10 hover:bg-black/80 hover:border-cyan-400/40 transition-all duration-300 group overflow-hidden">
               <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* Imagen - Primera columna en desktop */}
-                <div className="order-2 lg:order-1">
-                  <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden">
+                <div className="order-2 lg:order-1 relative group/image">
+                  <div 
+                    className="aspect-video bg-gray-800 rounded-lg overflow-hidden cursor-pointer relative"
+                    onClick={() => openGallery('salomarket', 'SaloMarket')}
+                  >
                     <img 
                       src="/images/salomarket.PNG" 
                       alt="Screenshot de SaloMarket - Plataforma de comercio electrónico" 
-                      className="w-full object-cover transition-transform duration-700 group-hover:scale-103" 
+                      className="w-full object-cover transition-transform duration-700 group-hover/image:scale-105" 
                     />
+                    
+                    {/* Overlay con indicador de galería */}
+                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover/image:opacity-100 transition-all duration-300 flex items-center justify-center">
+                      <div className="text-center text-white transform translate-y-4 group-hover/image:translate-y-0 transition-transform duration-300">
+                        <FaImages className="text-3xl mx-auto mb-2 text-cyan-400" />
+                        <span className="font-semibold text-lg">Ver galería</span>
+                        <p className="text-sm text-gray-300 mt-1">Haz clic para ver más imágenes</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Indicador pequeño siempre visible */}
+                  <div className="absolute top-3 right-3 bg-cyan-600/90 text-white px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 backdrop-blur-sm">
+                    <FaImages className="text-xs" />
+                    {projectImages.salomarket.length} imágenes
                   </div>
                 </div>
 
                 {/* Contenido con goteo en lado izquierdo */}
                 <div className="order-1 lg:order-2 relative pl-4">
-                  {/* Goteo cyan en lado izquierdo del texto */}
-                  <div className="absolute left-0 top-0 w-0.5 h-0 bg-gradient-to-b from-cyan-400 via-purple-500 to-cyan-400 opacity-0 group-hover:opacity-100 group-hover:h-full transition-all duration-1000 ease-out shadow-[0_0_8px_rgba(6,182,212,0.6)]"></div>
-                  {/* Glow sutil */}
-                  <div className="absolute left-[-1px] top-0 w-1 h-0 bg-cyan-400 blur-sm opacity-0 group-hover:opacity-100 group-hover:h-full transition-all duration-1200 ease-out"></div>
-
                   <h3 className="text-2xl font-bold text-white mb-4">SaloMarket</h3>
                   <p className="text-gray-300 text-lg mb-6 mr-5 leading-relaxed text-justify">
                     Plataforma de comercio electrónico completa con carrito de compras, registro de usuarios,
@@ -169,10 +235,15 @@ const Projects = () => {
               </div>
             </div>
           </AnimatedReveal>
-
-          
         </div>
       </div>
+
+      <ProjectGallery
+        isOpen={galleryState.isOpen}
+        images={galleryState.images}
+        projectName={galleryState.projectName}
+        onClose={closeGallery}
+      />
     </section>
   );
 };
