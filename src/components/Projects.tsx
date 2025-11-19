@@ -95,7 +95,7 @@ const Projects = () => {
 
                   <h3 className="text-2xl font-bold text-white mb-4">Verona Joyas</h3>
                   <p className="text-gray-300 text-lg mb-6 ml-5 leading-relaxed text-justify">
-                    Landing page para una tienda de joyería, diseñada para resaltar la elegancia y sofisticación de los productos. Incluye animaciones sutiles, un diseño responsivo y un panel de administración
+                    Catalogo online para una tienda de bijouterie, diseñada para resaltar la elegancia y sofisticación de los productos. Incluye animaciones sutiles, un diseño responsivo y un panel de administración
                     para la gestión de productos.
                     Actualmente en desarrollo, con un enfoque en la experiencia del usuario y la estética visual.
                   </p>
