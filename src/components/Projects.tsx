@@ -22,7 +22,6 @@ const Projects = () => {
       '/images/verona-6.PNG',
       '/images/verona-7.PNG',
       '/images/verona-8.PNG'
-
     ],
     salomarket: [
       '/images/salomarket.PNG',
@@ -32,7 +31,6 @@ const Projects = () => {
       '/images/salomarket-5.PNG',
       '/images/salomarket-6.PNG',
       '/images/salomarket-7.PNG'
-
     ]
   };
 
@@ -49,22 +47,22 @@ const Projects = () => {
   };
 
   return (
-    <section id="proyectos" className="pt-20 py-10 px-3 ">
+    <section id="proyectos" className="pt-12 md:pt-20 py-8 md:py-10 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <AnimatedReveal direction='right'>
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4">
               Mis proyectos
             </h2>
             <div className="w-16 h-1 bg-cyan-400 mx-auto rounded-full"></div>
           </div>
         </AnimatedReveal>
-        <div className="space-y-16">
+        <div className="space-y-10 md:space-y-16">
 
           {/* Verona Joyas */}
           <AnimatedReveal direction='right' delay={400}>
-            <div className="bg-black/50 backdrop-blur-sm border border-purple-400/20 rounded-lg p-10 hover:bg-black/80 hover:border-purple-400/40 transition-all duration-300 group overflow-hidden">
-              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="bg-black/50 backdrop-blur-sm border border-purple-400/20 rounded-lg p-6 sm:p-8 md:p-10 hover:bg-black/80 hover:border-purple-400/40 transition-all duration-300 group overflow-hidden">
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
                 <div className="order-2 lg:order-2 relative group/image">
                   <div 
                     className="aspect-video bg-gray-800 rounded-lg overflow-hidden cursor-pointer relative"
@@ -77,30 +75,28 @@ const Projects = () => {
                     />
                     <div className="absolute inset-0 bg-black/60 opacity-0 group-hover/image:opacity-100 transition-all duration-300 flex items-center justify-center">
                       <div className="text-center text-white transform translate-y-4 group-hover/image:translate-y-0 transition-transform duration-300">
-                        <FaImages className="text-3xl mx-auto mb-2 text-purple-400" />
-                        <span className="font-semibold text-lg">Ver galería</span>
-                        <p className="text-sm text-gray-300 mt-1">Haz clic para ver más imágenes</p>
+                        <FaImages className="text-2xl sm:text-3xl mx-auto mb-2 text-purple-400" />
+                        <span className="font-semibold text-base sm:text-lg">Ver galería</span>
+                        <p className="text-xs sm:text-sm text-gray-300 mt-1">Haz clic para ver más imágenes</p>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute top-3 right-3 bg-purple-600/90 text-white px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 backdrop-blur-sm">
+                  <div className="absolute top-2 sm:top-3 right-2 sm:right-3 bg-purple-600/90 text-white px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 backdrop-blur-sm">
                     <FaImages className="text-xs" />
                     {projectImages.verona.length} imágenes
                   </div>
                 </div>
 
-                <div className="order-1 lg:order-1 relative pr-4">
+                <div className="order-1 lg:order-1 relative pr-0 sm:pr-4">
                   <div className="absolute right-0 top-0 w-0.5 h-0 bg-gradient-to-b from-purple-400 via-purple-500 to-purple-400 opacity-0 group-hover:opacity-100 group-hover:h-full transition-all duration-1000 ease-out shadow-[0_0_8px_rgba(147,51,234,0.6)]"></div>
                   <div className="absolute right-[-1px] top-0 w-1 h-0 bg-purple-400 blur-sm opacity-0 group-hover:opacity-100 group-hover:h-full transition-all duration-1200 ease-out"></div>
 
-                  <h3 className="text-2xl font-bold text-white mb-4">Verona Joyas</h3>
-                  <p className="text-gray-300 text-lg mb-6 ml-5 leading-relaxed text-justify">
-                    Catalogo online para una tienda de bijouterie, diseñada para resaltar la elegancia y sofisticación de los productos. Incluye animaciones sutiles, un diseño responsivo y un panel de administración
-                    para la gestión de productos.
-                    Actualmente en desarrollo, con un enfoque en la experiencia del usuario y la estética visual.
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Verona Joyas</h3>
+                  <p className="text-gray-300 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed text-justify">
+                    Catalogo online para una tienda de bijouterie, diseñada para resaltar la elegancia y sofisticación de los productos. Incluye animaciones sutiles, un diseño responsivo y un panel de administración para la gestión de productos. Actualmente en desarrollo, con un enfoque en la experiencia del usuario y la estética visual.
                   </p>
 
-                  <div className="mb-6">
+                  <div className="mb-4 sm:mb-6">
                     <div className="flex flex-wrap gap-2">
                       {[
                         { name: 'Next.js', icon: <SiNextdotjs className="inline-block mr-1" /> },
@@ -113,25 +109,27 @@ const Projects = () => {
                       ].map((tech) => (
                         <span
                           key={tech.name}
-                          className="flex items-center px-4 py-2 bg-gray-800 text-purple-400 text-base rounded-full border border-purple-400/20"
+                          className="flex items-center px-2 sm:px-4 py-1 sm:py-2 bg-gray-800 text-purple-400 text-xs sm:text-base rounded-full border border-purple-400/20"
                         >
-                          {React.cloneElement(tech.icon, { className: "mr-2 text-xl" })}
-                          {tech.name}
+                          {React.cloneElement(tech.icon, { className: "mr-1 sm:mr-2 text-lg sm:text-xl" })}
+                          <span className="hidden sm:inline">{tech.name}</span>
+                          <span className="sm:hidden text-xs">{tech.name.split(' ')[0]}</span>
                         </span>
                       ))}
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
+                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
                     <a
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="w-full sm:w-auto"
                     >
                       <NeonButton variant="secondary">
-                        <div className="flex items-center gap-2">
-                          <FaGithub className="text-lg" />
-                          Ver en GitHub
+                        <div className="flex items-center justify-center gap-2">
+                          <FaGithub className="text-base sm:text-lg" />
+                          <span>Ver en GitHub</span>
                         </div>
                       </NeonButton>
                     </a>
@@ -139,11 +137,12 @@ const Projects = () => {
                       href="https://veronajoyas.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="w-full sm:w-auto"
                     >
                       <NeonButton variant="secondary">
-                        <div className="flex items-center gap-2">
-                          <FaExternalLinkAlt className="text-lg" />
-                          Ver live demo
+                        <div className="flex items-center justify-center gap-2">
+                          <FaExternalLinkAlt className="text-base sm:text-lg" />
+                          <span>Ver live demo</span>
                         </div>
                       </NeonButton>
                     </a>
@@ -155,8 +154,8 @@ const Projects = () => {
 
           {/* SaloMarket */}
           <AnimatedReveal direction='left' delay={200}>
-            <div className="bg-black/50 border backdrop-blur-sm border-cyan-400/20 rounded-lg p-10 hover:bg-black/80 hover:border-cyan-400/40 transition-all duration-300 group overflow-hidden">
-              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="bg-black/50 border backdrop-blur-sm border-cyan-400/20 rounded-lg p-6 sm:p-8 md:p-10 hover:bg-black/80 hover:border-cyan-400/40 transition-all duration-300 group overflow-hidden">
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
                 <div className="order-2 lg:order-1 relative group/image">
                   <div 
                     className="aspect-video bg-gray-800 rounded-lg overflow-hidden cursor-pointer relative"
@@ -169,30 +168,28 @@ const Projects = () => {
                     />
                     <div className="absolute inset-0 bg-black/60 opacity-0 group-hover/image:opacity-100 transition-all duration-300 flex items-center justify-center">
                       <div className="text-center text-white transform translate-y-4 group-hover/image:translate-y-0 transition-transform duration-300">
-                        <FaImages className="text-3xl mx-auto mb-2 text-cyan-400" />
-                        <span className="font-semibold text-lg">Ver galería</span>
-                        <p className="text-sm text-gray-300 mt-1">Haz clic para ver más imágenes</p>
+                        <FaImages className="text-2xl sm:text-3xl mx-auto mb-2 text-cyan-400" />
+                        <span className="font-semibold text-base sm:text-lg">Ver galería</span>
+                        <p className="text-xs sm:text-sm text-gray-300 mt-1">Haz clic para ver más imágenes</p>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute top-3 right-3 bg-cyan-600/90 text-white px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 backdrop-blur-sm">
+                  <div className="absolute top-2 sm:top-3 right-2 sm:right-3 bg-cyan-600/90 text-white px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 backdrop-blur-sm">
                     <FaImages className="text-xs" />
                     {projectImages.salomarket.length} imágenes
                   </div>
                 </div>
 
-                <div className="order-1 lg:order-2 relative pl-4">
+                <div className="order-1 lg:order-2 relative pl-0 sm:pl-4">
                   <div className="absolute left-0 top-0 w-0.5 h-0 bg-gradient-to-b from-cyan-400 via-purple-500 to-cyan-400 opacity-0 group-hover:opacity-100 group-hover:h-full transition-all duration-1000 ease-out shadow-[0_0_8px_rgba(6,182,212,0.6)]"></div>
                   <div className="absolute left-[-1px] top-0 w-1 h-0 bg-cyan-400 blur-sm opacity-0 group-hover:opacity-100 group-hover:h-full transition-all duration-1200 ease-out"></div>
 
-                  <h3 className="text-2xl font-bold text-white mb-4">SaloMarket</h3>
-                  <p className="text-gray-300 text-lg mb-6 mr-5 leading-relaxed text-justify">
-                    Plataforma de comercio electrónico completa con carrito de compras, registro de usuarios,
-                    gestión de productos y sistema de pagos integrado con Mercado Pago, incluyendo un panel de administración. Desarrollada con
-                    React, Express, MySQL y Vite para una experiencia de usuario fluida y rápida.
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">SaloMarket</h3>
+                  <p className="text-gray-300 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed text-justify">
+                    Plataforma de comercio electrónico completa con carrito de compras, registro de usuarios, gestión de productos y sistema de pagos integrado con Mercado Pago, incluyendo un panel de administración. Desarrollada con React, Express, MySQL y Vite para una experiencia de usuario fluida y rápida.
                   </p>
 
-                  <div className="mb-6">
+                  <div className="mb-4 sm:mb-6">
                     <div className="flex flex-wrap gap-2">
                       {[
                         { name: 'JavaScript', icon: <SiJavascript className="inline-block mr-1" /> },
@@ -203,25 +200,27 @@ const Projects = () => {
                       ].map((tech) => (
                         <span
                           key={tech.name}
-                          className="flex items-center px-4 py-2 bg-gray-800 text-cyan-400 text-base rounded-full border border-cyan-400/20"
+                          className="flex items-center px-2 sm:px-4 py-1 sm:py-2 bg-gray-800 text-cyan-400 text-xs sm:text-base rounded-full border border-cyan-400/20"
                         >
-                          {React.cloneElement(tech.icon, { className: "mr-2 text-xl" })}
-                          {tech.name}
+                          {React.cloneElement(tech.icon, { className: "mr-1 sm:mr-2 text-lg sm:text-xl" })}
+                          <span className="hidden sm:inline">{tech.name}</span>
+                          <span className="sm:hidden text-xs">{tech.name.split(' ')[0]}</span>
                         </span>
                       ))}
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
+                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full">
                     <a
                       href="https://github.com/peluca6666/ecommerce"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="w-full sm:w-auto"
                     >
                       <NeonButton variant="primary">
-                        <div className="flex items-center gap-2">
-                          <FaGithub className="text-lg" />
-                          Ver en GitHub
+                        <div className="flex items-center justify-center gap-2">
+                          <FaGithub className="text-base sm:text-lg" />
+                          <span>Ver en GitHub</span>
                         </div>
                       </NeonButton>
                     </a>
