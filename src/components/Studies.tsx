@@ -30,6 +30,19 @@ const Studies = () => {
                             </p>
                         </div>
 
+                        <div className="pl-6">
+                            <div className="mb-6">
+                                <h3 className="text-xl font-bold text-white mb-2">Scientific Computing with Python</h3>
+                                <p className="text-cyan-400 font-medium text-lg">FreeCodeCamp - 2025 / Actualidad</p>
+                            </div>
+
+                            <p className="text-white font-medium text-lg leading-relaxed text-justify">
+                              Actualmente me estoy formando en Python, enfocándome en estructuras de datos, algoritmos y programación orientada a objetos.
+                               El curso también aborda técnicas de análisis y manipulación de datos,
+                               permitiéndome resolver problemas reales con un enfoque práctico y basado en computación científica
+                            </p>
+                        </div>
+
                     </div>
                 </AnimatedReveal>
             </div>
