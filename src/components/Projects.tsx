@@ -62,7 +62,7 @@ const Projects = () => {
         <div className="space-y-16">
 
           {/* Verona Joyas */}
-          <AnimatedReveal direction='left' delay={400}>
+          <AnimatedReveal direction='right' delay={400}>
             <div className="bg-black/50 backdrop-blur-sm border border-purple-400/20 rounded-lg p-10 hover:bg-black/80 hover:border-purple-400/40 transition-all duration-300 group overflow-hidden">
               <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="order-2 lg:order-2 relative group/image">
@@ -154,7 +154,7 @@ const Projects = () => {
           </AnimatedReveal>
 
           {/* SaloMarket */}
-          <AnimatedReveal direction='right' delay={200}>
+          <AnimatedReveal direction='left' delay={200}>
             <div className="bg-black/50 border backdrop-blur-sm border-cyan-400/20 rounded-lg p-10 hover:bg-black/80 hover:border-cyan-400/40 transition-all duration-300 group overflow-hidden">
               <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="order-2 lg:order-1 relative group/image">

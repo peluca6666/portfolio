@@ -9,7 +9,7 @@ const Studies = () => {
 
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-                            Estudios
+                            Educación
                         </h2>
                         <div className="w-16 h-1 bg-cyan-400 mx-auto rounded-full"></div>
                     </div>
@@ -20,8 +20,8 @@ const Studies = () => {
                         <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-cyan-400 to-blue-500"></div>
 
                         <div className="pl-6">
-                            <div className="mb-6">
-                                <h3 className="text-xl font-bold text-white mb-2">Tecnico Universtario en Desarrollo de Aplicaciones Informáticas</h3>
+                            <div className="mb-5">
+                                <h3 className="text-xl font-bold text-white mb-2">- Tecnico Universtario en Desarrollo de Aplicaciones Informáticas</h3>
                                 <p className="text-cyan-400 font-medium text-lg">Instituto Universitario Aeronáutico - 2022 / 2025</p>
                             </div>
 
@@ -31,8 +31,8 @@ const Studies = () => {
                         </div>
 
                         <div className="pl-6">
-                            <div className="mb-6">
-                                <h3 className="text-xl font-bold text-white mb-2">Scientific Computing with Python</h3>
+                            <div className="mb-6 mt-12">
+                                <h3 className="text-xl font-bold text-white mb-2"> - Scientific Computing with Python</h3>
                                 <p className="text-cyan-400 font-medium text-lg">FreeCodeCamp - 2025 / Actualidad</p>
                             </div>
 
