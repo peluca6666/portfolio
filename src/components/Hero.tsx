@@ -39,8 +39,8 @@ const Hero = () => {
                   <NeonButton variant="primary">Ver proyectos</NeonButton>
                 </a>
                 <a 
-                  href="/Cabrera_German_CV_ES.pdf"
-                  download="Cabrera_German_CV_ES.pdf"
+                  href="/Cabrera_German_Cv.pdf"
+                  download="Cabrera_German_Cv.pdf"
                   className="w-full sm:w-auto"
                 >
                   <NeonButton variant="secondary">Descargar CV</NeonButton>  
